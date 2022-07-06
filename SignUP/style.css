@@ -1,0 +1,129 @@
+*{
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgba(37, 117, 252, 1);
+    color: white;
+}
+section{
+    padding: 10vw 30.5vw;
+}
+#myForm{
+    background-color: #262626;;
+    border: none;
+    padding: 5vw 3.5vw;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 20px rgb(190 188 188); */
+}
+#head{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+#hr{
+    margin-bottom: 2vw;
+}
+#myForm input{
+    width: 29vw;
+    height: 1Svw;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(219, 236, 255);
+    font-size: 1vw;
+}
+#myForm p{
+    margin: 5px;
+}
+#myForm select{
+    width: 30vw;
+    height: 3vw;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 1vw;
+    background-color: rgb(219, 236, 255);
+}
+#myForm select option{
+    font-size: 1vw;
+}
+#myForm input::placeholder{
+    font-size: 1vw;
+}
+#myForm label{
+    display: block;
+    font-size: 1vw;
+    margin-bottom: 5px;
+}
+#inp-1, #inp-2, #inp-3, #inp-4, #inp-5, #inp-6, #inp-7, #inp-8, #inp-9{
+    margin-bottom: 2vw;
+}
+#countryCode{
+    width: 5vw !important;
+    margin-right: -7vw;
+    display: inline;
+}
+.Style_phone{
+    margin: 0px 0px 0px 93px;
+}
+#mobileNumber{
+    width: 19.5vw  !important;
+    font-size: 1vw;
+}
+#genderLabel{
+    font-size: 1vw;
+}
+#genderSubDiv1, #genderSubDiv2, #genderSubDiv3{
+    display: flex;
+    margin-bottom: 0.2vw;
+}
+#radio1, #radio2, #radio3{
+    width: 1.2vw !important;
+}
+#inp-7 label{
+    margin-top: 0.35vw;
+    margin-left: 1vw;
+}
+#showFullNameError,#showFirstNameError,#showEmailError,#showMobileError,#showBirthDateError,#showGenderError,#showConfirmPasswordError{
+    font-size: 0.9vw;
+}
+#showPasswordError{
+    font-size: 0.9vw;
+    display: none;
+}
+#submitBTN{
+    width: 9vw;
+    background-color: rgba(37, 117, 252, 1);
+    height: 3vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    margin-left: 130px;
+}
+#submitBTN{
+    margin-right: 1.1vw;
+}
+#exampleCheck1{
+    width:1vw !important;
+    height: 1.2vw !important;
+    margin-bottom: 1vw !important;
+    color-scheme: dark !important;
+}
+#inp_checkbox{
+    display: flex;
+    text-align: left !important;
+    padding-left: 12px !important;
+}
+ #checkboxerroe,#showCountryError{
+font-size: 0.9vw;
+ }
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign UP Page</title>
+</head>
+<body>
+    <section>
+        <form id="myForm">
+            <h2 id="head">Sign UP Page</h2>
+
+            <div id="inp-1">
+                <label for="fullName">*Full Name: </label>
+                <input type="text" id="fullName" name="Full Name" placeholder="Enter full name" onkeyup="validateName()" autocomplete="off">
+                <p id="showFullNameError"></p>
+            </div>
+
+            <div id="inp-2">
+                <label for="firstName">*First Name: </label>
+                <input type="text" id="firstName" name="First Name" placeholder="Enter first name" onkeyup="validateFName()" onkeypress="return AvoidSpace(event)" autocomplete="off">
+                <p id="showFirstNameError"></p>
+            </div>
+
+            <div id="inp-3">
+                <label for="emailID">*Email ID: </label>
+                <input type="text" id="emailID" name="Email" onkeyup="isEmailValid()" onkeypress="return AvoidSpace(event)" placeholder="Enter email id" autocomplete="off">
+                <p id="showEmailError"></p>
+            </div>
+
+            <div id="inp-8">
+                <label for="password">*Password: </label>
+                <input type="password" name="Password" id="password" placeholder="Enter your password" onkeyup="passwordError()" onkeypress="return AvoidSpace(event)">
+                <span id="showPasswordError">
+                    <span id="error1">(*Please Enter password 8 characters long,</span>
+                    <span id="error2"> Max 16 characters long,</span>
+                    <span id="error3">one uppercase letter,</span>
+                    <span id="error4">one lowercase letter,</span>
+                    <span id="error5">one numeric value,</span>
+                    <span id="error6">one special character,</span>
+                    <span id="error7">not any blank space)</span>
+                </span>
+            </div>
+
+            <div id="inp-9">
+                <label for="confirmPassword">*Confirm Password: </label>
+                <input id="confirmPassword" type="password" name="password" placeholder="Confirm your password" onkeyup="confirmPasswordError()" onkeypress="return AvoidSpace(event)" autocomplete="off">
+                <p id="showConfirmPasswordError"></p>
+            </div>
+            <div id="inp-4">
+                <label for="countryList">*Country</label>
+                <select name="Country" id="countryList" onchange="isCountrySelected()"></select>
+                <p id="showCountryError"></p>
+            </div>
+
+            <div id="inp-5">
+                <label for="mobileNumber">*Mobile Number:</label>
+                <select name="Country" id="countryCode"></select>
+                <input type="number" name="Mobile Number" id="mobileNumber" onkeyup="phoneNumberError()" onkeypress="return AvoidSpace(event)" placeholder="Enter mobile number" class="Style_phone">
+                <p id="showMobileError"></p>
+            </div>
+
+            <div id="inp-7"> 
+                <p id="genderLabel">*Gender:</p>
+                <div id="genderSubDiv1">
+                    <input type="radio" name="gender" id="radio1" value="Male" onclick="isGenderSelected()">
+                    <label for="radio1">Male</label>
+                </div>
+                <div id="genderSubDiv2">
+                    <input type="radio" name="gender" id="radio2" value="Female" onclick="isGenderSelected()">
+                    <label for="radio2">Female</label>
+                </div>
+                <p id="showGenderError"></p>
+            </div>
+       
+            <div id="inp_checkbox">
+                <input type="checkbox" id="exampleCheck1" onclick="checkBoxValid()">
+                <label class="form-check-label" id="checkbox_label" for="exampleCheck1" style="text-align: left;">*I Read all Terms and Conditions</label>
+            </div>
+            <span id="checkboxerroe"></span>
+            <div-10>
+                <button type="button" id="submitBTN" onclick="finalValidations()">Sign Up</button>
+            </div-10>
+        </form>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
